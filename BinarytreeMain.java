@@ -191,13 +191,14 @@ public class BinarytreeMain{
     }
 
     link.print(link.head);
-    // int k;
-    // do{  
-    //   System.out.println("enter -999 press terminate");
-    //   k = kb.nextInt();
-    //   if(findvalue(k)) System.out.println(link.deletebranch(k));
-    //   else System.out.println("it is not a memeber of this branch");
-    // }while(k != -999);
+    int k;
+    do{  
+      System.out.println("enter -999 press terminate");
+      k = kb.nextInt();
+      if(link.findvalue(k)) System.out.println(link.deletebranch(k));
+      else System.out.println("it is not a memeber of this branch");
+      link.print(link.head);
+    }while(k != -999);
     
   }
 }
